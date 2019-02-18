@@ -11,7 +11,6 @@ const htmlPlugin = new HtmlWebPackPlugin({
 // filename is the minified html that will be generated to dist folder
 
 module.exports = {
-  devtool: 'inline-source-map',
   module: {
     // for js files, use babel-loader to transpile all of them
     rules: [
@@ -20,9 +19,14 @@ module.exports = {
         test: /\.(jsx|js)$/,
         exclude: /node_modules/,
         // use prop indicates which loader should be use to do the transforming
-        use: {
-          loader: ['babel-loader', 'eslint-loader'],
-        },
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'eslint-loader',
+          },
+        ],
       },
     ],
   },
