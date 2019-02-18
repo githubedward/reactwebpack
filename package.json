@@ -1,0 +1,35 @@
+{
+  "name": "reactwebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "format": "prettier --write \"src/**/*.js\"",
+    "eslint-fix": "eslint --fix \"src/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.14.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-react": "^7.12.4",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "1.16.4",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  }
+}

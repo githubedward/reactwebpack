@@ -1,0 +1,4 @@
+// code below needed to be able to use babel presets
+{
+  "presets": ["env", "react"]
+}
